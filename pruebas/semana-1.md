@@ -2,6 +2,13 @@
 
 Esta es la plantilla. El registro con datos reales se llena en una copia en OneDrive, `Cerebro/registro-semana-1.md`: en el repo no entran datos reales.
 
+## Antes del día 1
+
+- [ ] Política de datos aprobada (`docs/politica-datos.md`).
+- [ ] Aviso de grabación enviado a los participantes de las reuniones recurrentes.
+- [ ] Los 20 casos escritos en `Cerebro/casos.md` (plantilla en `pruebas/casos.md`).
+- [ ] Mensaje a TI enviado y Microsoft 365 conectado.
+
 ## Criterio para seguir, el viernes
 
 | Qué | Meta |
@@ -9,8 +16,7 @@ Esta es la plantilla. El registro con datos reales se llena en una copia en OneD
 | Brief a tiempo | 5 de 5 días, o cada falla con su causa |
 | Ceros silenciosos | Ninguno: ningún brief que diga «nada» sin haber leído |
 | Actas reales | 3 o más; compromisos correctos en el 80 % o más |
-| Consultas reales | 8 de 10 con una fuente que se pudo abrir y confirmar |
-| «No encontré» | 2 de 2 preguntas trampa respondidas sin rellenar |
+| Casos de prueba | 16 de 20 o más con fuente verificable, y ningún «no hay dato» rellenado (`pruebas/casos.md`) |
 | La pregunta al gerente | «Si lo apagamos mañana, ¿lo extrañarías?» Sí |
 
 ## Tres pruebas que deben fallar bien (martes)

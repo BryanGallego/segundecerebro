@@ -98,21 +98,30 @@ Criterios para todas: una tarea por skill, `SKILL.md` corto con los detalles en 
 - **Cero no es calma:** una fuente sin leer se anuncia en la primera línea; jamás se entrega «sin novedades» con una fuente caída.
 - **El modelo no suma:** los números salen de la fuente o de un script.
 
+## Gobierno (definido antes de arrancar)
+
+Tres documentos que se cierran antes del día 1:
+
+- [`docs/politica-datos.md`](docs/politica-datos.md): qué se lee y qué no, dónde queda, quién accede, cómo se revoca y el aviso de grabación.
+- [`docs/contingencia.md`](docs/contingencia.md): qué hacer cuando algo falla.
+- [`pruebas/casos.md`](pruebas/casos.md): la plantilla de los 20 casos de prueba, que se escriben en OneDrive.
+
 ## Fases
 
 ### Semana 1 — Prototipo en producción (del 2026-09-28 al 2026-10-02)
 
 Brief, actas y consultas con la memoria del nivel 1.
 
-- **Día 0**, en la cuenta Pro del gerente:
+- **Día 0:**
   - enviar `docs/mensaje-a-TI.md`;
-  - en *Configuración › Privacidad*, desactivar el uso de los chats para entrenamiento;
-  - activar la ejecución de código;
-  - conectar Microsoft 365.
+  - revisar y aprobar la política de datos (`docs/politica-datos.md`) con quien maneje la protección de datos;
+  - enviar el aviso de grabación a los participantes de las reuniones recurrentes;
+  - escribir los 20 casos en `Cerebro/casos.md`, con la plantilla de `pruebas/casos.md`;
+  - en la cuenta Pro del gerente: desactivar el uso de los chats para entrenamiento (*Configuración › Privacidad*), activar la ejecución de código y conectar Microsoft 365.
 - **Día 1:**
   - subir las tres skills en *Customize › Skills*, con los ZIP que genera `scripts/empaquetar_skills.py`;
   - subir `boveda/cerebro-contexto.md` a OneDrive, carpeta `Cerebro`, y llenarlo (20 minutos);
-  - activar la transcripción automática en español en las reuniones recurrentes;
+  - activar la transcripción automática en español en las reuniones recurrentes, solo después del aviso de grabación;
   - crear la tarea programada «Brief matutino»: días hábiles, 6:30, modo Auto, **sin carpeta**, con la instrucción `Usa la skill brief-matutino para hoy.`;
   - ejecutarla de inmediato y probar el brief y una consulta desde el celular.
 - **Día 2:** las tres pruebas que deben fallar bien (`pruebas/semana-1.md`) y la primera acta real.
@@ -126,11 +135,10 @@ Brief, actas y consultas con la memoria del nivel 1.
 - Skill `ingesta-diaria`.
 - Validador determinista de la bóveda en `scripts/`: tipos, campos, enlaces y compromisos con responsable, fecha y estado.
 - Vigilante fuera del motor: un flujo de Power Automate que avisa si el brief del día no aparece o si su línea de salud trae ceros.
-- `docs/contingencia.md` y `docs/politica-datos.md`.
 
 ### Semanas 4 a 6 — Operación con memoria
 
-- Casos de prueba: 20 preguntas reales con respuesta esperada.
+- Volver a correr los 20 casos, ahora contra la bóveda.
 - Revisión de las notas con el gerente; correcciones a `FEEDBACK.md`.
 - Carga de historia, si hace falta: se mide primero con una semana.
 
@@ -146,4 +154,4 @@ Brief, actas y consultas con la memoria del nivel 1.
 
 ## Estado
 
-**2026-09-26.** Semana 1 lista para arrancar: las tres skills (0.1.0), la plantilla de contexto, el mensaje a TI y las pruebas están en el repo. Siguiente paso: el día 0.
+**2026-09-27.** Gobierno definido: la política de datos con el aviso de grabación, el plan de contingencia y la plantilla de los 20 casos están en el repo. Siguiente paso: el día 0.
