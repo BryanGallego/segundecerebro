@@ -1,0 +1,13 @@
+{
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "showArrow": false,
+  "colorGroups": [
+    { "query": "path:notas", "color": { "a": 1, "rgb": 3099516 } },
+    { "query": "path:briefs", "color": { "a": 1, "rgb": 9076081 } },
+    { "query": "file:compromisos", "color": { "a": 1, "rgb": 10764586 } },
+    { "query": "file:contexto", "color": { "a": 1, "rgb": 2056791 } }
+  ]
+}

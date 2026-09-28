@@ -1,0 +1,11 @@
+{
+  "commitMessage": "Obsidian: cambios del {{date}}",
+  "autoCommitMessage": "Obsidian: cambios del {{date}}",
+  "autoSaveInterval": 5,
+  "autoPushInterval": 0,
+  "autoPullInterval": 5,
+  "autoPullOnBoot": true,
+  "syncMethod": "rebase",
+  "pullBeforePush": true,
+  "disablePush": false
+}
