@@ -1,6 +1,6 @@
 # Contexto de la planta
 
-- Planta textil integrada verticalmente.
+- Planta textil integrada verticalmente: Manufacturas Eliot, la textil del grupo (confirmado por [[Brayan Gallego]], 2026-09-28).
 - 6.000 personas.
 - 100 toneladas de tela al día.
 
@@ -29,7 +29,7 @@ Se completa con el uso. Cada nombre va con sus variantes. Por ejemplo: Juan Pér
 
 Fuente: [[Brayan Gallego]], 2026-09-28.
 
-- Manufacturas Eliot ← «Eliot»: hace las telas.
+- Manufacturas Eliot ← «Eliot», «Textil Eliot»: hace las telas. Es la planta de este cerebro.
 - PASH SAS ← «PASH», «Pash», dominio pash.com.co: empresa hermana de Manufacturas Eliot; hace la confección. Tiene 4 marcas y más de 400 tiendas en Colombia y en el exterior.
   - OSTU
   - ATMOS
