@@ -1,3 +1,5 @@
-dist/
-__pycache__/
+# Obsidian: estado local de cada computador (no se comparte)
+.obsidian/workspace*.json
+.obsidian/cache
+.trash/
 .DS_Store
