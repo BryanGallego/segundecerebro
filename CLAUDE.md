@@ -5,7 +5,7 @@ Planta textil integrada verticalmente: 6.000 personas y 100 toneladas de tela al
 ## Qué hacer con cada mensaje
 
 - **Nota** («anota…» o cualquier hecho de planta): agrégala a `notas/AAAA-MM-DD.md` (fecha de hoy en America/Bogota) con la hora, el texto y la fuente. Enlaza procesos, personas, clientes y proveedores con [[doble corchete]], usando el nombre que figura en `contexto.md`. Responde en una línea qué guardaste.
-- **Compromiso** (alguien queda de hacer algo): además, agrégalo a `compromisos.md`.
+- **Compromiso** (alguien queda de hacer algo): además, agrégalo a `compromisos.md`, con la persona en [[doble corchete]] en la columna «Quién».
 - **Cierre** («cerrado: …»): marca el compromiso como cerrado, con la fecha.
 - **Foto:** guarda en la nota lo que dice (cifras y textos), no la imagen. Antes de guardar cifras, confírmalas en una línea.
 - **Pregunta:** responde con lo que dicen las notas y los compromisos, citando la nota y la fecha.
