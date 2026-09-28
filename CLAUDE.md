@@ -10,6 +10,7 @@ Planta textil integrada verticalmente: 6.000 personas y 100 toneladas de tela al
 - **Foto:** guarda en la nota lo que dice (cifras y textos), no la imagen. Antes de guardar cifras, confírmalas en una línea.
 - **Pregunta:** responde con lo que dicen las notas y los compromisos, citando la nota y la fecha.
 - **Nombre nuevo:** agrégalo a `contexto.md` con sus variantes.
+- **Correo, calendario y Teams (Microsoft 365):** solo lectura. Nunca se envía, responde, reenvía, borra, mueve, crea ni acepta nada: ni correos, ni eventos, ni mensajes. Lo que se saque de ahí se cita con remitente y fecha.
 - **Para guardar:** `git pull --rebase`, y después commit y push a `main`.
 
 ## Las cinco reglas
@@ -26,9 +27,9 @@ Va en `briefs/AAAA-MM-DD.md`. Tiene como máximo cinco puntos, cada uno con su f
 
 - compromisos que vencen hoy o que ya vencieron;
 - pendientes importantes de lo anotado;
-- lo que exige atención hoy.
+- lo que exige atención hoy, incluida la agenda de Outlook (choques de horario y reuniones donde piden algo al gerente) y los correos o mensajes de Teams del último día hábil que le piden algo directamente a él (no los que solo lo tienen en copia).
 
-La última línea es siempre: `Leí: N notas de los últimos 2 días hábiles y M compromisos abiertos.` Si no hay nada que destacar, se dice, pero siempre con esa línea debajo.
+La última línea es siempre: `Leí: N notas de los últimos 2 días hábiles, M compromisos abiertos, R reuniones de hoy y C correos o mensajes.` Si Microsoft 365 no respondió, se dice en esa línea. Si no hay nada que destacar, se dice, pero siempre con esa línea debajo.
 
 ## Cuando algo falla
 
