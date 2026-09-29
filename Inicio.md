@@ -1,5 +1,3 @@
-# Inicio
-
 La memoria del gerente de manufactura de [[contexto|Manufacturas Eliot]]. Claude la escribe; Obsidian la muestra.
 
 - [[compromisos]]: quién quedó de hacer qué y para cuándo.
@@ -8,6 +6,6 @@ La memoria del gerente de manufactura de [[contexto|Manufacturas Eliot]]. Claude
 - `briefs/`: el brief de cada mañana.
 - [[aprendizajes]]: lo que falló y qué cambió.
 
-Para ver cómo se conecta todo: vista de grafo (Ctrl+G). Los nombres entre [[ ]] que todavía no tienen página propia aparecen igual como puntos del grafo.
+Para ver cómo se conecta todo: vista de grafo (Ctrl+G). Los nombres entre corchetes dobles que todavía no tienen página propia aparecen igual como puntos del grafo.
 
 Obsidian conectado el 2026-09-28 en el computador de [[Brayan Gallego]].
