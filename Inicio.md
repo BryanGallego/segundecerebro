@@ -9,3 +9,5 @@ La memoria del gerente de manufactura de [[contexto|Manufacturas Eliot]]. Claude
 - [[aprendizajes]]: lo que falló y qué cambió.
 
 Para ver cómo se conecta todo: vista de grafo (Ctrl+G). Los nombres entre [[ ]] que todavía no tienen página propia aparecen igual como puntos del grafo.
+
+Obsidian conectado el 2026-09-28 en el computador de [[Brayan Gallego]].
