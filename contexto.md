@@ -24,6 +24,7 @@ Se completa con el uso. Cada nombre va con sus variantes. Por ejemplo: Juan Pér
 - Familia Douer ← «los Douer»: equipo directivo de la organización ([[Brayan Gallego]], 2026-09-29)
 - Pepe Douer ← «Pepe Douer Kassin», pepedouer@patprimo.com.co: de la familia Douer; va en copia del proyecto DataSphere (correos del 2026-09-16)
 - Emilio Succar ← «Emilio», «Emilio Succar Martínez», esuccar@patprimo.com.co: lidera los proyectos de integración a SAP Datasphere (correos del 2026-09-16)
+- Harol Montero ← «Harol Estid Montero Rodríguez», «Harold», hmontero@patprimo.com.co: seguimiento de urdido, APIs de tejeduría y monitoreo de EliotFlow (correos de 2026)
 - Carlos García ← «Carlos Orlando García Tovar», cgarcia@patprimo.com.co (Pat Primo)
 
 ### Clientes
