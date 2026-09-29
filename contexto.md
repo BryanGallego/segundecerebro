@@ -48,7 +48,7 @@ Fuente: [[Brayan Gallego]], 2026-09-28.
 
 ### Sistemas
 
-- EliotFlow ← «Eliotflow»: sistema propio para gestionar y mejorar el flujo en la operación, sobre todo en tintorería y ramas; desbloqueó el scheduling que no salía en Intuiflow ([[Brayan Gallego]], 2026-09-29)
+- EliotFlow ← «Eliotflow», «Eliot Flow»: sistema propio para gestionar y mejorar el flujo en la operación; desbloqueó el scheduling que no salía en Intuiflow. Lo desarrolla Brayan Gallego; en tintorería desde febrero de 2026 (perfeccionado en mayo) y en ramas desde agosto de 2026 ([[Brayan Gallego]], 2026-09-29)
 - SAP Datasphere ← «DataSphere», «Datasphere»: plataforma de datos a la que se integran los sistemas de producción (correos de Emilio Succar, 2026-09-16)
 - Acatex, Vertex, Eliotex y Plano: sistemas de producción que entran al proyecto de integración a Datasphere (correo de Emilio Succar, 2026-09-16)
 - Eliotconf, PLM y SAP S/4HANA: sistemas del proceso de Mercería que entran a Datasphere (correo de Emilio Succar, 2026-09-16)
