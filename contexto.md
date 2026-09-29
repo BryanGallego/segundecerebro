@@ -20,6 +20,7 @@ Se completa con el uso. Cada nombre va con sus variantes. Por ejemplo: Juan Pér
 - Nelson Montañez ← «Nelson Enrique Montañez Acevedo», «Nelson», nmontanez@tekstelas.com
 - Luis Silva ← «Luis Alfredo Silva Herrera», lasilvah@patprimo.com.co (Pat Primo)
 - Jhonny Alexander ← «Jhonny», jamartinez@patprimo.com.co: envía el informe diario «Producción día …» (apellido por confirmar; así firma los correos)
+- David Poveda ← «David», dapoveda@flowingconsultoria.com (Flowing Consultoría): coordina la reunión con DDTech sobre Intuiflow (correo del 2026-09-28)
 - Carlos García ← «Carlos Orlando García Tovar», cgarcia@patprimo.com.co (Pat Primo)
 
 ### Clientes
@@ -36,6 +37,11 @@ Fuente: [[Brayan Gallego]], 2026-09-28.
   - ATMOS
   - Pat Primo ← «PATPRIMO», «patprimo», dominio patprimo.com.co
   - Seven Seven ← «SEVEN SEVEN»
+
+### Proveedores y consultores (relación por confirmar)
+
+- Flowing Consultoría ← «Flowing», dominio flowingconsultoria.com
+- DDTech ← «DDTech»: reunión sobre reglas locales y simulación por grupo de máquina en Intuiflow (correo de David Poveda, 2026-09-28)
 
 ### Sistemas
 
