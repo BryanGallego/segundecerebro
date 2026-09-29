@@ -1,13 +1,51 @@
 {
+  "collapse-filter": true,
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "showArrow": false,
+  "collapse-color-groups": true,
   "colorGroups": [
-    { "query": "path:notas", "color": { "a": 1, "rgb": 3099516 } },
-    { "query": "path:briefs", "color": { "a": 1, "rgb": 9076081 } },
-    { "query": "file:compromisos", "color": { "a": 1, "rgb": 10764586 } },
-    { "query": "file:contexto", "color": { "a": 1, "rgb": 2056791 } }
-  ]
+    {
+      "query": "path:notas",
+      "color": {
+        "a": 1,
+        "rgb": 3099516
+      }
+    },
+    {
+      "query": "path:briefs",
+      "color": {
+        "a": 1,
+        "rgb": 9076081
+      }
+    },
+    {
+      "query": "file:compromisos",
+      "color": {
+        "a": 1,
+        "rgb": 10764586
+      }
+    },
+    {
+      "query": "file:contexto",
+      "color": {
+        "a": 1,
+        "rgb": 2056791
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": true,
+  "centerStrength": 0.518713248970312,
+  "repelStrength": 10,
+  "linkStrength": 1,
+  "linkDistance": 250,
+  "scale": 1,
+  "close": false
 }
