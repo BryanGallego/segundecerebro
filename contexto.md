@@ -19,6 +19,7 @@ Se completa con el uso. Cada nombre va con sus variantes. Por ejemplo: Juan Pér
 - Jesús Cabrera ← «Jesús Eduardo Cabrera Luna», «Jesus E.», jecabrera@patprimo.com.co (Pat Primo)
 - Nelson Montañez ← «Nelson Enrique Montañez Acevedo», «Nelson», nmontanez@tekstelas.com
 - Luis Silva ← «Luis Alfredo Silva Herrera», lasilvah@patprimo.com.co (Pat Primo)
+- Jhonny Alexander ← «Jhonny», jamartinez@patprimo.com.co: envía el informe diario «Producción día …» (apellido por confirmar; así firma los correos)
 - Carlos García ← «Carlos Orlando García Tovar», cgarcia@patprimo.com.co (Pat Primo)
 
 ### Clientes
