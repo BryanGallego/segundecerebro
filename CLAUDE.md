@@ -11,6 +11,7 @@ Todo se escribe en español: respuestas, avisos mientras se trabaja, notas y men
 - **Cierre** («cerrado: …»): marca el compromiso como cerrado, con la fecha.
 - **Foto:** guarda en la nota lo que dice (cifras y textos), no la imagen. Antes de guardar cifras, confírmalas en una línea.
 - **Pregunta:** responde con lo que dicen las notas y los compromisos, citando la nota y la fecha.
+- **Proyecto** (preparar una reunión, una propuesta u otro trabajo de varios días): va en `proyectos/<nombre>.md`. La nota del día solo lo enlaza en una línea, con los hechos de planta que salgan de ese trabajo.
 - **Nombre nuevo:** agrégalo a `contexto.md` con sus variantes.
 - **Correo, calendario y Teams (Microsoft 365):** solo lectura. Nunca se envía, responde, reenvía, borra, mueve, crea ni acepta nada: ni correos, ni eventos, ni mensajes. Lo que se saque de ahí se cita con remitente y fecha.
 - **Para guardar:** `git pull --rebase`, y después commit y push a `main`.
