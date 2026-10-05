@@ -22,6 +22,7 @@ Se completa con el uso. Cada nombre va con sus variantes. Por ejemplo: Juan Pér
 - Jhonny Alexander ← «Jhonny Alexander Martínez Colorado», «Jhonny», jamartinez@patprimo.com.co: Analista de Ingeniería; envía el informe diario «Producción día …» (firma del correo del 2026-09-29)
 - David Poveda ← «David», dapoveda@flowingconsultoria.com (Flowing Consultoría): coordina la reunión con DDTech sobre Intuiflow (correo del 2026-09-28)
 - Alexander Cárdenas ← «Alexander Cardenas Perez», «Alex», acardenas@patprimo.com.co: da las transacciones para la integración con Onebeat (correos del 2026-09-30)
+- Juan David Chica ← «Juan David Chica Ochoa», «Juan David», jchica@tekstelas.com: Gerente de Manufactura Textil (dicho por [[Brayan Gallego]], 2026-10-05)
 - Familia Douer ← «los Douer»: equipo directivo de la organización ([[Brayan Gallego]], 2026-09-29)
 - Pepe Douer ← «Pepe Douer Kassin», pepedouer@patprimo.com.co: de la familia Douer; va en copia del proyecto DataSphere (correos del 2026-09-16)
 - Emilio Succar ← «Emilio», «Emilio Succar Martínez», esuccar@patprimo.com.co: lidera los proyectos de integración a SAP Datasphere (correos del 2026-09-16)
