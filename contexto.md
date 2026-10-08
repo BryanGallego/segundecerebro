@@ -1,7 +1,7 @@
 # Contexto de la planta
 
 - Planta textil integrada verticalmente: Manufacturas Eliot, la textil del grupo (confirmado por [[Brayan Gallego]], 2026-09-28).
-- 6.000 personas.
+- 3.000 personas en Manufacturas Eliot (corrección de [[Brayan Gallego]], 2026-10-08; antes decía 6.000, 2026-09-28).
 - 100 toneladas de tela al día.
 
 ## Nombres
