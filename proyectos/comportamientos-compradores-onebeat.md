@@ -58,7 +58,7 @@ La lista termina con dos preguntas abiertas: «¿Cómo se vería el informe? For
 
 ## Cómo hacerlo (fases)
 
-0. **Hoy · entender.** Cita de 45 min con quien arma el informe (Magali Garzón) y Negocios (María Luisa Ochoa, Juanita De la Vega). Pedir ver cómo lo arman, de qué fuentes (el calendario de la lista de deseos habla de «Comparativo / BI Márgenes», «Inventario + Status Producción» y «Gestión Inseason»), cuánto tardan y qué decisiones toman con él.
+0. **Hoy · entender.** Cita de 45 min con quien arma el informe (Magali Garzón) y Negocios (María Luisa Ochoa, Juanita De la Vega). Pedir ver cómo lo arman, de qué fuentes (la columna «Equivalente Actual» de la lista de deseos nombra «Comparativo / BI Márgenes», «Inventario + Status Producción» y «Gestión Inseason»), cuánto tardan y qué decisiones toman con él.
 1. **Esta semana · prototipo de una cápsula.** Reproducir la ficha de PAT CLUB y de SMART OFFICE en el Playground (filas: referencia-color; columnas: clima; métricas: ventas 30d, stock, sell-through, cobertura, margen). **Criterio de éxito: que cuadre con el PDF** (ventas + stock = «compra», evacuación y cobertura iguales).
 2. **Siguiente · curva ideal.** Que Negocios defina la evacuación ideal por días desde la entrada y por tipo de cápsula, y pedir a Onebeat dónde cargarla como referencia para marcar «NO SUPERA».
 3. **Después · vista guardada.** Vista de Playground por cápsula con exportación a Excel/PDF, y una rutina semanal acordada (la guía de Onebeat sugiere 30 min semanales).
