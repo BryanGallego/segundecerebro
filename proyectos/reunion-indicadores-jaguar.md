@@ -42,6 +42,10 @@ Hoy 2026-11-09, 13:00–14:00 (Bogotá). La organiza [[Brayan Gallego]]. Invitad
 - ¿Los rangos de semáforo serán iguales para las cuatro marcas?
 - ¿Cuál es el cronograma del segundo módulo (Negocios)? No lo vi en lo que leí.
 
+## Punto adicional pedido por Sophie Douer (2026-11-09)
+
+Paralelo en Jaguar+ del informe de comportamientos de los compradores: ver `proyectos/comportamientos-compradores-onebeat.md`. Las 7 preguntas para Onebeat de ese archivo se pueden llevar a esta reunión.
+
 ## Fuera de esta reunión
 
 - La pregunta de finanzas de Onebeat ([[Tania Liberman]] / Meitar, 2026-11-04) sigue sin respuesta tuya. Conviene resolverla aparte con Hugo o Fabricio, no frente al equipo de Pash.

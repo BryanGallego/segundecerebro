@@ -70,3 +70,5 @@ Fuente: [[Brayan Gallego]], 2026-09-28.
 - Giomar Sarmiento ← «Giomar Bibiana Sarmiento Perez»; Lesly Escobar ← «Lesly Pamela Escobar Castellanos», «Pamela Escobar» (Directora de Abastecimiento, Seven Seven); Leydi Carvajal ← «Leydi Jury Carvajal Ricardo»: de Pash, invitadas a la reunión de indicadores del 2026-11-09
 - Miguel Hernández ← «Miguel Andres Hernandez Lizarazo», desarrollador ABAP (correo del 2026-11-06)
 - Tania Liberman: de Onebeat; pregunta por el pago de facturas (correo del 2026-11-04)
+- Magali Garzón ← «Ingry Magali Garzon Lopez», igarzon@pash.com.co: Analista de Negocios de Patprimo; envía los informes «Comportamientos» a Sophie y Pepe Douer (correo del 2026-11-03)
+- María Luisa Ochoa ← «Maria Luisa Ochoa Guevara», «Maria Luisa», mochoa@pash.com.co: Directora de Negocios de Patprimo; pidió la lista de deseos de informes de Onebeat (correo del 2026-10-05)
