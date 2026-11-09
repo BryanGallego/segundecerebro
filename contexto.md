@@ -57,3 +57,16 @@ Fuente: [[Brayan Gallego]], 2026-09-28.
 - Eliotconf, PLM y SAP S/4HANA: sistemas del proceso de Mercería que entran a Datasphere (correo de Emilio Succar, 2026-09-16)
 - Intuiflow ← sistema donde Planeación Textil hace cargues masivos de demanda (correo de José Luis Caro, 2026-09-28)
 - Aranda ← mesa de casos donde se registró IR-209538 (mismo correo)
+
+### Segundo Cerebro / Onebeat (agregado 2026-11-09)
+
+- Segundo Cerebro ← «Second Brain», «Segundo cerebro» (proyecto del Grupo Pash): iniciativa para centralizar información, conocimiento y mejores prácticas; primera fase en Seven Seven (correos del 2026-11-05 y la invitación al lanzamiento del 2026-11-10)
+- Sophie Douer ← «Sophie Douer Kassin», sdouer@patprimo.com.co: de la familia Douer; recibió la propuesta de equipo del proyecto (correo del 2026-11-05)
+- Luisa González ← «Luisa Fernanda Gonzalez Murcia», «Lu», lugonzalez@patprimo.com.co: con Brayan define alcance y diagnóstico de Segundo Cerebro (correo del 2026-11-05)
+- Juanes ← «Juan Esteban García Aguirre», juanes@rewi.ai: de rewi.ai, entrenamiento de AI y proyecto Segundo Cerebro (correos del 2026-11-05 y 2026-11-06)
+- Carolina Salazar ← «Caro», caro@rewi.ai: de rewi.ai (mismos correos)
+- Onebeat ← «OneBeat», «Jaguar+», «Jaguar Plus»: plataforma de reposición y distribución del Grupo Pash (presentación de KPIs del 2026-10-09)
+- Fabricio García ← «Fabricio Fontanelli Garcia», fabricio.garcia@onebeat.co; Hugo Carvalho ← «Hugo Vasconcelos Ferraz Carvalho»; Andrés Alfonso ← «Andres Felipe Alfonso Diaz» (Senior Customer Success Manager LATAM); Pedro Basilio: todos de Onebeat (invitaciones de noviembre de 2026)
+- Giomar Sarmiento ← «Giomar Bibiana Sarmiento Perez»; Lesly Escobar ← «Lesly Pamela Escobar Castellanos», «Pamela Escobar» (Directora de Abastecimiento, Seven Seven); Leydi Carvajal ← «Leydi Jury Carvajal Ricardo»: de Pash, invitadas a la reunión de indicadores del 2026-11-09
+- Miguel Hernández ← «Miguel Andres Hernandez Lizarazo», desarrollador ABAP (correo del 2026-11-06)
+- Tania Liberman: de Onebeat; pregunta por el pago de facturas (correo del 2026-11-04)
