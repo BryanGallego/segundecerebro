@@ -1,24 +1,24 @@
 # Mensaje para Onebeat (borrador, para enviar tú)
 
-Hola equipo. Gracias por la reunión de hoy.
+Cordial saludo, equipo de Onebeat.
 
-Les comparto dos archivos para pedirles desarrollar en Onebeat el tablero **Comportamientos**:
+Agradezco el espacio de la reunión de hoy. Adjunto dos documentos con la solicitud de desarrollo del tablero **Comportamientos** en la plataforma:
 
-1. `mockup-comportamientos.html`: cómo lo imaginamos, basado en Visual Merchandising pero por cápsula y por marca. Se abre con doble clic en el navegador. Los datos son de ejemplo.
-2. `campos-comportamientos.docx`: los datos que necesita, cómo se calculan y qué falta por confirmar.
+1. `mockup-comportamientos.html`: propuesta de cómo se vería, basada en Visual Merchandising pero por cápsula y por marca. Se abre con Chrome o Edge. Los datos son de ejemplo.
+2. `campos-comportamientos.docx`: los datos que requiere el tablero, cómo se calculan y qué falta por confirmar.
 
-Lo que pedimos:
+Solicitamos:
 - Clasificación de Onebeat (Lanzamiento, Más vendido, Belly, Baja rotación, Sin rotación), sin el semáforo del informe actual.
 - Evacuación ideal comparando la velocidad del producto-color con la media del AG.
 - Filtros como los de Onebeat y el interruptor Empresa | Tienda.
 - Ventana de ventas de 30, 60 y 90 días, como el selector que ya tienen.
 - Ventas del e-commerce y bodega por producto-color.
 
-Para avanzar necesitamos que nos confirmen:
+Para avanzar, les agradezco confirmar:
 1. ¿La media del AG se puede calcular por cápsula o solo por tienda?
 2. ¿Cómo se exporta una ficha por cápsula?
 
-¿Cuándo podemos revisarlo juntos y qué tiempo estiman para una primera versión?
+Quedo atento para coordinar una revisión conjunta y conocer el tiempo estimado para una primera versión.
 
-Gracias,
-Brayan
+Cordialmente,
+Brayan Gallego
