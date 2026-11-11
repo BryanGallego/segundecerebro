@@ -11,6 +11,7 @@ Lo que pedimos:
 - Clasificación de Onebeat (Lanzamiento, Más vendido, Belly, Baja rotación, Sin rotación), sin el semáforo del informe actual.
 - Evacuación ideal comparando la velocidad del producto-color con la media del AG.
 - Filtros como los de Onebeat y el interruptor Empresa | Tienda.
+- Ventana de ventas de 30, 60 y 90 días, como el selector que ya tienen.
 - Ventas del e-commerce y bodega por producto-color.
 
 Para avanzar necesitamos que nos confirmen:

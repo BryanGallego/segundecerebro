@@ -114,6 +114,7 @@ th,td{padding:6px 8px;text-align:center;border-bottom:1px solid var(--line)}th{c
 .chip.x{background:#fde7e9;color:#8a2230}
 .fmf{display:flex;justify-content:flex-end;gap:10px;padding:14px 22px;border-top:1px solid var(--line);background:#fafbfc}
 .seg.tg{border-radius:999px;padding:3px;gap:2px}.seg.tg button{border-radius:999px;padding:6px 14px}.seg.tg button.on{background:#2f9a8b;color:#fff}
+.vv{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:0}.vd{font-size:12px;color:var(--mut);margin-top:2px}
 .btn.dk{background:#17313f;color:#fff;border-color:#17313f;font-weight:600}
 @media(max-width:700px){.fmb{grid-template-columns:minmax(0,1fr);height:auto}.fmb>div+div{border-left:0;border-top:1px solid var(--line)}}
 .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;padding:9px 16px;border-radius:8px;font-size:12px;z-index:60}
@@ -149,7 +150,8 @@ th,td{padding:6px 8px;text-align:center;border-bottom:1px solid var(--line)}th{c
  </div>
  <div class="note">Prototipo con datos ilustrativos. El e-commerce y la bodega no se abren por tienda. Las fotos de polo son las del tablero de Visual Merchandising compartido; los códigos, cifras y cápsula son de ejemplo, no reales.</div>
 
- <section class="panel" aria-label="Resumen de la cápsula">
+ <section class="panel vv" aria-label="Ventana de ventas"><div><div class="kpi"><div class="l">Ventana de ventas</div></div><div class="vd">Elige qué horizonte de ventas (rolling) alimenta todos los datos del tablero: KPIs, filtros rápidos, tarjetas y detalle.</div></div><div class="seg tg" id="win" role="group" aria-label="Ventana de ventas"><button data-w="30" class="on">30d</button><button data-w="60">60d</button><button data-w="90">90d</button></div></section>
+ <section class="panel" style="margin-top:12px" aria-label="Resumen de la cápsula">
   <div class="cap" id="cap"></div>
   <div class="clima" id="climaBand"></div>
  </section>
@@ -195,7 +197,7 @@ const CN=["Frío","Templado","Cálido"],CC=["#3b82f6","#f59e0b","#ef4444"];
 const AGS=["HOMBRE-MONO PRODUCTO-POLO","HOMBRE-MONO PRODUCTO-MISTER PATPRIMO-POLO-DESCUENTO"];
 const BOD=[0,0,0,243,0,564,299,15,0,933];
 P.forEach((p,i)=>{p.B=BOD[i];p.marca=i<6?"Pash":"Patprimo";p.cap="M5 · Natural";p.agn=i>=8?AGS[1]:AGS[0]});
-const gq=p=>Object.values(p.t).some(v=>v[1]===0),so=p=>p.S===0||p.E/(p.S/30)>180;
+const gq=p=>Object.values(p.t).some(v=>v[1]===0),so=p=>p.S===0||p.E/(ps(p)/st.win)>180;
 const FIELDS={"Catálogo":[
  {k:"marca",n:"Marca",vals:["Pash","Patprimo"],get:p=>p.marca},
  {k:"cap",n:"Cápsula",vals:["M4","M5 · Natural","M6"],get:p=>p.cap},
@@ -248,14 +250,17 @@ document.addEventListener("click",e=>{const T=e.target;
 const f=n=>Math.round(n).toLocaleString("es-CO");
 const PV=99900,costo=p=>Math.round(PV*(1-p.m/100));
 const TIENDAS={all:{n:"Todas las tiendas",f:1},p048:{n:"P048 · Patprimo V/Vicencio U",f:.06},p012:{n:"P012 · Pash Centro Mayor",f:.09},p031:{n:"P031 · Pash Unicentro",f:.08},p057:{n:"P057 · Patprimo Viva Envigado",f:.07}};
-const st={tienda:"all",k:null,clima:"all",canal:"all",vista:"t"};
+const st={win:30,tienda:"all",k:null,clima:"all",canal:"all",vista:"t"};
+const WF={30:1,60:1.85,90:2.65};
+const wj=p=>st.win===30?1:0.92+((+p.id.slice(-2)%5)/5)*0.16;
+const ps=p=>Math.round(p.S*WF[st.win]*wj(p)),pw=p=>Math.round(p.W*WF[st.win]*wj(p)),pag=p=>Math.round(p.ag*WF[st.win]);
 function calc(p){ // aplica canal y clima
  const T=TIENDAS[st.tienda]||TIENDAS.all,jit=T.f===1?1:0.7+((+p.id.slice(-2)%7)/7)*0.6;
- let S=Math.round(p.S*T.f*jit),E=Math.round(p.E*T.f*(2-jit));
- if(st.canal==="t")S=Math.round((p.S-p.W)*T.f*jit); else if(st.canal==="w")S=T.f===1?p.W:Math.round(p.W*T.f*jit*0.2);
+ let S=Math.round(ps(p)*T.f*jit),E=Math.round(p.E*T.f*(2-jit));
+ if(st.canal==="t")S=Math.round((ps(p)-pw(p))*T.f*jit); else if(st.canal==="w")S=T.f===1?pw(p):Math.round(pw(p)*T.f*jit*0.2);
  if(st.clima!=="all")S=Math.round(S*cshare(p));
- const agAdj=p.S?p.ag*T.f*(S/Math.max(1,Math.round(p.S*T.f*jit))):p.ag;
- const st_=S+E>0?S/(S+E):0, cob=S>0?E/(S/30):null, vs=p.ag?(S/agAdj-1):0;
+ const agAdj=p.S?pag(p)*T.f*(S/Math.max(1,Math.round(ps(p)*T.f*jit))):pag(p);
+ const st_=S+E>0?S/(S+E):0, cob=S>0?E/(S/st.win):null, vs=p.ag?(S/agAdj-1):0;
  return {S,E,st:st_,cob,vs,agAdj};
 }
 function render(){
@@ -263,32 +268,32 @@ function render(){
  // capsule band
  const tS=all.reduce((a,x)=>a+x.c.S,0),tE=all.reduce((a,x)=>a+x.c.E,0);
  const mg=all.reduce((a,x)=>a+x.p.m*x.c.S,0)/Math.max(tS,1);
- const web=all.reduce((a,x)=>a+(st.canal==="t"?0:(st.canal==="w"?x.c.S:x.p.W*cshare(x.p))),0);
- const K=[["Ventas 30d (und)",f(tS)],["Stock en tienda",f(tE)],["Inv. bodega",st.tienda==="all"?f(all.reduce((a,x)=>a+x.p.B,0)):"—"],["Sell-through",(tS/(tS+tE)*100).toFixed(1)+"%"],["Cobertura",tS?f(tE/(tS/30))+" d":"—"],["Margen",mg.toFixed(0)+"%"],["Ventas e-commerce",st.tienda==="all"?f(web)+" und":"—"],["Peso e-commerce",(tS&&st.tienda==="all")?Math.round(web/tS*100)+"%":"—"]];
+ const web=all.reduce((a,x)=>a+(st.canal==="t"?0:(st.canal==="w"?x.c.S:pw(x.p)*cshare(x.p))),0);
+ const K=[["Ventas "+st.win+"d (und)",f(tS)],["Stock en tienda",f(tE)],["Inv. bodega",st.tienda==="all"?f(all.reduce((a,x)=>a+x.p.B,0)):"—"],["Sell-through",(tS/(tS+tE)*100).toFixed(1)+"%"],["Cobertura",tS?f(tE/(tS/st.win))+" d":"—"],["Margen",mg.toFixed(0)+"%"],["Ventas e-commerce",st.tienda==="all"?f(web)+" und":"—"],["Peso e-commerce",(tS&&st.tienda==="all")?Math.round(web/tS*100)+"%":"—"]];
  document.getElementById("cap").innerHTML=K.map(k=>`<div class="kpi"><div class="l">${k[0]}</div><div class="v">${k[1]}</div></div>`).join("");
- const ct=[0,1,2].map(i=>all.map(x=>x.p).reduce((a,p)=>a+p.S*p.cl[i],0)),cs=ct.reduce((a,b)=>a+b,0)||1;
+ const ct=[0,1,2].map(i=>all.map(x=>x.p).reduce((a,p)=>a+ps(p)*p.cl[i],0)),cs=ct.reduce((a,b)=>a+b,0)||1;
  document.getElementById("climaBand").innerHTML='<span class="t">Ventas por clima</span>'+ct.map((v,i)=>`<span class="cl"><span class="dot" style="background:${CC[i]}"></span>${CN[i]} <b>${Math.round(v/cs*100)}%</b></span>`).join("");
  // quick filters
  document.getElementById("fq").innerHTML=Object.keys(CLS).map(k=>{const g=all.filter(x=>x.p.k===k);const S=g.reduce((a,x)=>a+x.c.S,0),E=g.reduce((a,x)=>a+x.c.E,0);
-  return `<button class="fc ${st.k===k?"on":""}" data-k="${k}"><b>${ic(k)}${CLS[k].n}</b><div>Colores de producto: <span>${g.length}</span><br>Stock: <span>${f(E)}</span><br>Ventas 30d: <span>${f(S)}</span><br>Cobertura: <span>${S?f(E/(S/30))+" d":"—"}</span></div></button>`}).join("");
+  return `<button class="fc ${st.k===k?"on":""}" data-k="${k}"><b>${ic(k)}${CLS[k].n}</b><div>Colores de producto: <span>${g.length}</span><br>Stock: <span>${f(E)}</span><br>Ventas ${st.win}d: <span>${f(S)}</span><br>Cobertura: <span>${S?f(E/(S/st.win))+" d":"—"}</span></div></button>`}).join("");
  const vis=all.filter(x=>!st.k||x.p.k===st.k).sort((a,b)=>b.c.S-a.c.S);
  const vsT=x=>x.p.S===0?'<span class="neg">sin ventas</span>':`<span class="${x.c.vs>.1?"pos":x.c.vs<-.1?"neg":"neu"}">${x.c.vs>=0?"+":""}${Math.round(x.c.vs*100)}% vs AG</span>`;
  const L=document.getElementById("list");
  if(!vis.length){L.innerHTML='<div class="panel">Sin productos con esos filtros.</div>'}
- else if(st.vista==="t"){L.innerHTML=`<div class="pgrid">${vis.map(x=>`<button class="pc" data-id="${x.p.id}"><div class="ph"><img src="${IMG[x.p.img]}" alt="Polo ${x.p.col}"><span class="badge" title="${CLS[x.p.k].n}" aria-label="${CLS[x.p.k].n}">${ic(x.p.k)}</span><span class="age">Antigüedad: ${x.p.age} días</span></div><div class="pm"><div class="c">${x.p.id}</div><div class="n">Polo ${x.p.col}</div><div class="mt"><span>Ventas 30d</span><span>${f(x.c.S)}</span><span>Stock tienda</span><span>${f(x.c.E)}</span><span>Bodega</span><span>${st.tienda==="all"?f(x.p.B):"—"}</span><span>Cobertura</span><span>${x.c.cob?f(x.c.cob)+" d":"—"}</span><span>Sell-through</span><span>${(x.c.st*100).toFixed(0)}%</span><span>Precio venta</span><span>$${f(PV)}</span><span>Costo</span><span>$${f(costo(x.p))}</span><span>Margen</span><span>${x.p.m}%</span></div><div class="vs"><span style="color:var(--mut)">Velocidad</span>${vsT(x)}</div></div></button>`).join("")}</div>`}
- else{L.innerHTML=`<div class="fl">${vis.map(x=>`<div class="fi" data-id="${x.p.id}"><img src="${IMG[x.p.img]}" alt="Polo ${x.p.col}"><div style="min-width:0"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><h5>Polo ${x.p.col}</h5>${ic(x.p.k)}<small>${CLS[x.p.k].n} · ${x.p.id} · 99.900 COP</small></div><div class="ft"><div><small>Antigüedad</small><b>${x.p.age} d</b></div><div><small>Ventas 30d</small><b>${f(x.c.S)}</b></div><div><small>Stock tienda</small><b>${f(x.c.E)}</b></div><div><small>Bodega</small><b>${st.tienda==="all"?f(x.p.B):"—"}</b></div><div><small>Cobertura</small><b>${x.c.cob?f(x.c.cob)+" d":"—"}</b></div><div><small>Sell-through</small><b>${(x.c.st*100).toFixed(0)}%</b></div><div><small>Sem −1 / −2</small><b>${x.p.sw1} / ${x.p.sw2}</b></div><div><small>Precio venta</small><b>$${f(PV)}</b></div><div><small>Costo</small><b>$${f(costo(x.p))}</b></div><div><small>vs media AG</small><b>${x.p.S===0?"—":(x.c.vs>=0?"+":"")+Math.round(x.c.vs*100)+"%"}</b></div></div><div class="cl" style="margin-top:8px;display:inline-flex">${x.p.S?[0,1,2].map(i=>`<span><span class="dot" style="background:${CC[i]}"></span> ${CN[i]} ${Math.round(x.p.cl[i]*100)}%`).join("</span> &nbsp;")+"</span>":"Sin ventas en el corte"}</div></div></div>`).join("")}</div>`}
+ else if(st.vista==="t"){L.innerHTML=`<div class="pgrid">${vis.map(x=>`<button class="pc" data-id="${x.p.id}"><div class="ph"><img src="${IMG[x.p.img]}" alt="Polo ${x.p.col}"><span class="badge" title="${CLS[x.p.k].n}" aria-label="${CLS[x.p.k].n}">${ic(x.p.k)}</span><span class="age">Antigüedad: ${x.p.age} días</span></div><div class="pm"><div class="c">${x.p.id}</div><div class="n">Polo ${x.p.col}</div><div class="mt"><span>Ventas ${st.win}d</span><span>${f(x.c.S)}</span><span>Stock tienda</span><span>${f(x.c.E)}</span><span>Bodega</span><span>${st.tienda==="all"?f(x.p.B):"—"}</span><span>Cobertura</span><span>${x.c.cob?f(x.c.cob)+" d":"—"}</span><span>Sell-through</span><span>${(x.c.st*100).toFixed(0)}%</span><span>Precio venta</span><span>$${f(PV)}</span><span>Costo</span><span>$${f(costo(x.p))}</span><span>Margen</span><span>${x.p.m}%</span></div><div class="vs"><span style="color:var(--mut)">Velocidad</span>${vsT(x)}</div></div></button>`).join("")}</div>`}
+ else{L.innerHTML=`<div class="fl">${vis.map(x=>`<div class="fi" data-id="${x.p.id}"><img src="${IMG[x.p.img]}" alt="Polo ${x.p.col}"><div style="min-width:0"><div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><h5>Polo ${x.p.col}</h5>${ic(x.p.k)}<small>${CLS[x.p.k].n} · ${x.p.id} · 99.900 COP</small></div><div class="ft"><div><small>Antigüedad</small><b>${x.p.age} d</b></div><div><small>Ventas ${st.win}d</small><b>${f(x.c.S)}</b></div><div><small>Stock tienda</small><b>${f(x.c.E)}</b></div><div><small>Bodega</small><b>${st.tienda==="all"?f(x.p.B):"—"}</b></div><div><small>Cobertura</small><b>${x.c.cob?f(x.c.cob)+" d":"—"}</b></div><div><small>Sell-through</small><b>${(x.c.st*100).toFixed(0)}%</b></div><div><small>Sem −1 / −2</small><b>${x.p.sw1} / ${x.p.sw2}</b></div><div><small>Precio venta</small><b>$${f(PV)}</b></div><div><small>Costo</small><b>$${f(costo(x.p))}</b></div><div><small>vs media AG</small><b>${x.p.S===0?"—":(x.c.vs>=0?"+":"")+Math.round(x.c.vs*100)+"%"}</b></div></div><div class="cl" style="margin-top:8px;display:inline-flex">${x.p.S?[0,1,2].map(i=>`<span><span class="dot" style="background:${CC[i]}"></span> ${CN[i]} ${Math.round(x.p.cl[i]*100)}%`).join("</span> &nbsp;")+"</span>":"Sin ventas en el corte"}</div></div></div>`).join("")}</div>`}
  // right panel
  const vs_=vis;const sS=vs_.reduce((a,x)=>a+x.c.S,0),sE=vs_.reduce((a,x)=>a+x.c.E,0);
- document.getElementById("res").innerHTML=[["Colores de producto",vs_.length],["Ventas 30d",f(sS)],["Ventas 30d ($)",f(sS*99900)+" COP"],["Stock en tienda",f(sE)],["Cobertura",sS?f(sE/(sS/30))+" d":"—"]].map(r=>`<div class="row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join("");
+ document.getElementById("res").innerHTML=[["Colores de producto",vs_.length],["Ventas "+st.win+"d",f(sS)],["Ventas "+st.win+"d ($)",f(sS*99900)+" COP"],["Stock en tienda",f(sE)],["Cobertura",sS?f(sE/(sS/st.win))+" d":"—"]].map(r=>`<div class="row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join("");
 }
 function modal(id){
- const p=P.find(x=>x.id===id),c=calc(p),seg=Math.max(1,Math.min(5,Math.round(c.E/Math.max(p.buf,1)*3)));
+ const p0=P.find(x=>x.id===id),c=calc(p0),p=Object.assign({},p0,{S:ps(p0),W:pw(p0),ag:pag(p0)}),seg=Math.max(1,Math.min(5,Math.round(c.E/Math.max(p.buf,1)*3)));
  const ev=p.S===0?"Sin ventas en el corte":`${(c.vs>=0?"+":"")+Math.round(c.vs*100)}% frente a la media del AG`;
  const mxv=Math.max(p.S,p.ag,1);
  const tr=Object.entries(p.t).map(([k,v])=>`<td>${k}</td><td>${v[0]}</td><td ${v[1]===0?'style="color:var(--red);font-weight:600"':""}>${v[1]}</td>`);
- document.getElementById("modal").innerHTML=`<div class="ov" id="ov"><div class="md" role="dialog" aria-modal="true" aria-label="Detalle ${p.col}"><div class="mh"><div><h2>Polo, ${p.col}, M</h2><small>${p.id} · ${p.id.slice(-4)} · 99.900 COP</small></div><button class="x" id="cl" aria-label="Cerrar">×</button></div><div class="mb"><div><img src="${IMG[p.img]}" alt="Polo ${p.col}"></div><div><div class="tl" style="display:inline-block;margin-bottom:8px;padding:4px 10px"><small>Antigüedad: ${p.age} días</small></div><div class="tiles"><div class="tl"><small>Desempeño</small><b style="display:flex;gap:6px;align-items:center">${ic(p.k)}${CLS[p.k].n}</b><em>vs media del AG</em></div><div class="tl"><small>Buffer</small><b>${f(p.buf)}</b><em>suma del optimal stock por talla</em></div><div class="tl"><small>Stock en tienda</small><b>${f(c.E)}</b><em>inventario actual</em></div><div class="tl"><small>Ventas 30d</small><b>${f(c.S)}</b><em>unidades vendidas últimos 30 días</em></div><div class="tl wide"><small>Depleción de stock <span style="float:right;color:var(--blue)">${seg>=4?"Sobrestock":seg>=2?"Saludable":"Bajo"}</span></small><div class="seg5">${[1,2,3,4,5].map(i=>`<i class="${i<=seg?"f":""}"></i>`).join("")}</div></div></div></div>
+ document.getElementById("modal").innerHTML=`<div class="ov" id="ov"><div class="md" role="dialog" aria-modal="true" aria-label="Detalle ${p.col}"><div class="mh"><div><h2>Polo, ${p.col}, M</h2><small>${p.id} · ${p.id.slice(-4)} · 99.900 COP</small></div><button class="x" id="cl" aria-label="Cerrar">×</button></div><div class="mb"><div><img src="${IMG[p.img]}" alt="Polo ${p.col}"></div><div><div class="tl" style="display:inline-block;margin-bottom:8px;padding:4px 10px"><small>Antigüedad: ${p.age} días</small></div><div class="tiles"><div class="tl"><small>Desempeño</small><b style="display:flex;gap:6px;align-items:center">${ic(p.k)}${CLS[p.k].n}</b><em>vs media del AG</em></div><div class="tl"><small>Buffer</small><b>${f(p.buf)}</b><em>suma del optimal stock por talla</em></div><div class="tl"><small>Stock en tienda</small><b>${f(c.E)}</b><em>inventario actual</em></div><div class="tl"><small>Ventas ${st.win}d</small><b>${f(c.S)}</b><em>unidades vendidas últimos ${st.win} días</em></div><div class="tl wide"><small>Depleción de stock <span style="float:right;color:var(--blue)">${seg>=4?"Sobrestock":seg>=2?"Saludable":"Bajo"}</span></small><div class="seg5">${[1,2,3,4,5].map(i=>`<i class="${i<=seg?"f":""}"></i>`).join("")}</div></div></div></div>
  <div class="sec2 tl"><h4>Evacuación: velocidad del producto-color vs media del AG</h4><div class="cmp"><div class="r"><span>Producto-color</span><i><b style="width:${p.S/mxv*100}%;background:var(--blue)"></b></i><span>${f(p.S)} und</span></div><div class="r"><span>Media del AG</span><i><b style="width:${p.ag/mxv*100}%;background:#9fb2d8"></b></i><span>${f(p.ag)} und</span></div></div><em style="font-size:11px;color:var(--mut);font-style:normal">${ev}. La media del AG la calcula Onebeat con productos equivalentes. Sell-through ${(c.st*100).toFixed(0)}% · cobertura ${c.cob?f(c.cob)+" d":"—"}.</em></div>
- <div class="sec2 tl"><h4>Inventario por ubicación</h4><div class="tiles" style="grid-template-columns:repeat(3,1fr)"><div class="tl"><small>En tienda</small><b>${f(c.E)}</b><em>unidades</em></div><div class="tl"><small>En bodega</small><b>${st.tienda==="all"?f(p.B):"—"}</b><em>${st.tienda==="all"?"unidades, no asignadas a tienda":"la bodega no se abre por tienda"}</em></div><div class="tl"><small>Ventas e-commerce 30d</small><b>${st.tienda==="all"?f(p.W):"—"}</b><em>unidades</em></div></div></div>
+ <div class="sec2 tl"><h4>Inventario por ubicación</h4><div class="tiles" style="grid-template-columns:repeat(3,1fr)"><div class="tl"><small>En tienda</small><b>${f(c.E)}</b><em>unidades</em></div><div class="tl"><small>En bodega</small><b>${st.tienda==="all"?f(p.B):"—"}</b><em>${st.tienda==="all"?"unidades, no asignadas a tienda":"la bodega no se abre por tienda"}</em></div><div class="tl"><small>Ventas e-commerce ${st.win}d</small><b>${st.tienda==="all"?f(p.W):"—"}</b><em>unidades</em></div></div></div>
  <div class="sec2 tl"><h4>Precio, costo y margen</h4><div class="tiles" style="grid-template-columns:repeat(3,1fr)"><div class="tl"><small>Precio de venta</small><b>$${f(PV)}</b><em>COP, por unidad</em></div><div class="tl"><small>Costo</small><b>$${f(costo(p))}</b><em>COP, por unidad</em></div><div class="tl"><small>Margen</small><b>${p.m}%</b><em>sobre precio de venta</em></div></div></div>
  <div class="sec2 tl"><h4>Por clima, semanas y canal</h4><div class="tw"><table><tr><th></th><th>Frío</th><th>Templado</th><th>Cálido</th><th>Sem −1</th><th>Sem −2</th><th>E-commerce</th></tr><tr><td>Ventas</td>${p.cl.map(v=>`<td>${f(p.S*v)}</td>`).join("")}<td>${p.sw1}</td><td>${p.sw2}</td><td>${p.W}</td></tr></table></div></div>
  <div class="sec2 tl"><h4>Tallas del producto <small style="color:var(--mut);font-weight:400">buffer / stock</small></h4><div class="tw"><table><tr><th>Talla</th>${Object.keys(p.t).map(k=>`<th>${k} buffer</th><th>${k} stock</th>`).join("")}</tr><tr><td>Unidades</td>${Object.values(p.t).map(v=>`<td>${v[0]}</td><td ${v[1]===0?'style="color:var(--red);font-weight:600"':""}>${v[1]}</td>`).join("")}</tr></table></div></div></div></div></div>`;
@@ -301,6 +306,7 @@ document.addEventListener("click",e=>{
  const fc=e.target.closest(".fc");if(fc){st.k=st.k===fc.dataset.k?null:fc.dataset.k;render();return}
  const pc=e.target.closest("[data-id]");if(pc){modal(pc.dataset.id)}
 });
+document.getElementById("win").onclick=e=>{const b=e.target.closest("[data-w]");if(!b)return;st.win=+b.dataset.w;document.querySelectorAll("#win button").forEach(x=>x.classList.toggle("on",x===b));render()};
 document.getElementById("aE").onclick=()=>{st.tienda="all";aE.classList.add("on");aT.classList.remove("on");fTienda.hidden=true;render()};
 document.getElementById("aT").onclick=()=>{aT.classList.add("on");aE.classList.remove("on");fTienda.hidden=false;st.tienda=fTienda.value;render()};
 document.getElementById("fTienda").onchange=e=>{st.tienda=e.target.value;render()};
