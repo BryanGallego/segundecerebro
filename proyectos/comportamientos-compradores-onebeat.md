@@ -88,3 +88,33 @@ La lista termina con dos preguntas abiertas: «¿Cómo se vería el informe? For
 - Si costo o fecha de primera entrada no llegan completos a Jaguar+, margen y antigüedad salen mal (lo advierte la propia presentación de Onebeat).
 - El informe actual cambió de corte (31.10) y de universo (solo femenino); la comparación debe usar el mismo corte.
 - La inversión de tiempo depende de que Onebeat confirme los puntos de la tabla marcados «por confirmar».
+
+## Prototipo «Comportamientos» (2026-11-11)
+
+Prototipo privado con datos de ejemplo, en el estilo de Onebeat y con las fotos de polo del tablero de Visual Merchandising: https://claude.ai/artifact/JQhUdyZCVdQ1F4o2ko7Psq (versión 16). Es para presentarlo a Onebeat en la reunión de las 9:00 del 2026-11-11 (Brayan, mensaje del 2026-11-11).
+
+**Decisiones de Brayan (mensajes del 2026-11-11):**
+- SUPERA / NO SUPERA y el % de cumplimiento **no van**. Los reemplaza la clasificación de Onebeat: Lanzamiento, Más vendido, Belly, Baja rotación y Sin rotación.
+- La evacuación ideal sale de Onebeat: se compara la velocidad del producto-color con la media del AG (Assortment Group).
+- Estilo de Onebeat, no el del PDF de los compradores. La ficha es una vista dentro del tablero.
+- Filtros como los de Onebeat: botón «Filtros» con ventana de parámetros (Catálogo y Señales; incluir o «todos excepto») e interruptor Empresa | Tienda.
+- Cada tarjeta lleva antigüedad (pie de la foto), precio de venta, costo y margen, y bodega. Sin inventario de página.
+- En la cabecera: ventas, stock en tienda, inventario de bodega, sell-through, cobertura, margen, ventas y peso del e-commerce.
+- Se quitó: selector de corte, bloque Reposición & Transferencia, ranking y señales del panel derecho, y el menú lateral.
+
+**Datos confirmados por Brayan (2026-11-11):** Onebeat ya tiene por SKU las ventas del e-commerce y los inventarios de bodega y de tienda. Esa brecha de la tabla de arriba queda cerrada en datos.
+
+**Lo que mostré en el prototipo y no está confirmado con Onebeat:**
+- vista por cápsula o marca (el tablero actual es por tienda);
+- atributo clima;
+- costo y margen por producto-color;
+- ventas de semana −1 y −2;
+- formato ficha y exportación.
+
+**Lo que mostré como si ya existiera y es de ejemplo:** todas las cifras, los códigos, la cápsula M5 · Natural, la marca de cada producto, las tiendas y el inventario de bodega. El peso del e-commerce de la cabecera es una cifra inventada. En el PDF M5 Natural NOD la venta de página es 0 en los 10 productos (revisé solo ese PDF de 29).
+
+**Preguntas para la reunión de las 9:00:**
+1. ¿La media del AG se puede calcular por cápsula o solo por tienda?
+2. ¿Se pueden sumar por producto-color y por cápsula las ventas, el stock de tienda y la bodega?
+3. ¿El clima, el costo y la semana −1/−2 existen por producto-color?
+4. ¿Hay forma de exportar una ficha por cápsula?
