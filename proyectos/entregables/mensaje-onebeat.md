@@ -17,8 +17,7 @@ Lo que pedimos:
 Para avanzar necesitamos que nos confirmen:
 1. ¿La media del AG se puede calcular por cápsula o solo por tienda?
 2. ¿Se pueden sumar por producto-color y por cápsula las ventas, el stock de tienda, la bodega y el e-commerce?
-3. ¿El costo existe por producto-color, para calcular el margen?
-4. ¿Cómo se exporta una ficha por cápsula?
+3. ¿Cómo se exporta una ficha por cápsula?
 
 ¿Cuándo podemos revisarlo juntos y qué tiempo estiman para una primera versión?
 

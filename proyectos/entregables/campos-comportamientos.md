@@ -28,8 +28,8 @@ Decisiones de Pash:
 | Inventario de bodega | Unidades en bodega | Inventario de bodega | Inventario por SKU | Confirmado |
 | Sell-through | Ventas de la ventana ÷ (ventas de la ventana + stock) | Evacuación % | Sell-through | Confirmado: es la misma fórmula |
 | Cobertura (días) | Stock ÷ (ventas de la ventana ÷ días de la ventana) | Cobertura (en meses) | Cobertura | Confirmado |
-| Margen % | (Precio − costo) ÷ precio | Margen | Beneficio bruto y margen | Por confirmar que llegue el costo por producto-color |
-| Ventas e-commerce | Unidades vendidas por la página | Venta página | Ventas por SKU | Confirmado por Pash. Por confirmar que se pueda sumar por cápsula |
+| Margen % | (Precio − costo) ÷ precio | Margen | Beneficio bruto y margen | Confirmado |
+| Ventas e-commerce | Unidades vendidas por la página | Venta página | Ventas por SKU | Confirmado |
 | Peso e-commerce | Ventas e-commerce ÷ ventas totales | No existe hoy | Calculado | Propuesta de Pash |
 | Ventas por clima | Participación de cada clima (frío, templado, cálido) | Bloque por clima | Atributo de clima por localización | Confirmado |
 
@@ -42,8 +42,8 @@ Decisiones de Pash:
 | Antigüedad (días) | Días desde la primera entrada | Fecha de entrada | Antigüedad | Confirmado |
 | Velocidad vs media del AG | Ventas de la ventana del producto-color ÷ media de su AG en la misma ventana, menos 1 | Evacuación ideal | Desempeño vs media del AG | Por confirmar si la media se calcula por cápsula o solo por tienda |
 | Precio de venta | Precio vigente | Precio | Precio | Confirmado |
-| Costo | Costo unitario | Margen | No visto | Por confirmar |
-| Margen | (Precio − costo) ÷ precio | Margen | Margen | Por confirmar |
+| Costo | Costo unitario | Margen | Costo por producto-color | Confirmado |
+| Margen | (Precio − costo) ÷ precio | Margen | Margen | Confirmado |
 | Ventas de la ventana, stock, bodega | Por producto-color; ventas en 30, 60 o 90 días | Venta del mes, existencia, bodega | Ventas 30d, stock | Confirmado |
 | Sell-through y cobertura | Mismas fórmulas de la cabecera | Evacuación y cobertura | Sell-through y cobertura | Confirmado |
 | Buffer y depleción de stock | Como en Visual Merchandising | No existe hoy | Buffer, depleción | Confirmado |
@@ -74,8 +74,7 @@ Hoy el informe de los compradores y el tablero de ejemplo solo registraban 30 d�
 
 1. ¿La media del AG se puede calcular por cápsula, o solo por tienda?
 2. ¿Se pueden sumar por producto-color y por cápsula las ventas, el stock de tienda, la bodega y el e-commerce?
-3. ¿El costo existe por producto-color, para calcular el margen?
-4. ¿Cómo se exporta una ficha por cápsula?
+3. ¿Cómo se exporta una ficha por cápsula?
 
 # 4. Anexo: estructura del informe actual
 
