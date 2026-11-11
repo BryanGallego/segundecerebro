@@ -73,8 +73,7 @@ Hoy el informe de los compradores y el tablero de ejemplo solo registraban 30 d�
 # 3. Preguntas para Onebeat
 
 1. ¿La media del AG se puede calcular por cápsula, o solo por tienda?
-2. ¿Se pueden sumar por producto-color y por cápsula las ventas, el stock de tienda, la bodega y el e-commerce?
-3. ¿Cómo se exporta una ficha por cápsula?
+2. ¿Cómo se exporta una ficha por cápsula?
 
 # 4. Anexo: estructura del informe actual
 
