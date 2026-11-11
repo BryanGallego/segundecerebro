@@ -6,7 +6,7 @@ lang: es
 
 # 1. Qué se pide
 
-Un tablero **Comportamientos** dentro de Onebeat, parecido al de Visual Merchandising, pero **por cápsula y por marca** y no solo por tienda. Hoy los compradores arman este análisis a mano, en una ficha por cápsula. Este documento lista los datos que necesita el tablero, de dónde salen hoy y qué hay que confirmar con Onebeat. El archivo `mockup-comportamientos.html` muestra cómo se vería, con datos de ejemplo.
+Un tablero **Comportamientos** dentro de Onebeat, parecido al de Visual Merchandising, pero por atributos: de cápsula y por marca y no solo por tienda. Hoy los compradores arman este análisis a mano, en una ficha por cápsula. Este documento lista los datos que necesita el tablero, de dónde salen hoy y qué hay que confirmar con Onebeat. El archivo `mockup-comportamientos.html` muestra cómo se vería, con datos de ejemplo.
 
 Decisiones de Pash:
 
@@ -25,13 +25,13 @@ Decisiones de Pash:
 |---|---|---|---|---|
 | Ventas de la ventana (unidades) | Suma de ventas de la cápsula en la ventana elegida: 30, 60 o 90 días | Venta del mes (solo 30 días) | Ventana de ventas 30d / 60d / 90d | Confirmado: Onebeat ya las tiene calculadas |
 | Stock en tienda | Unidades en tiendas | Existencia | Stock en tienda | Confirmado |
-| Inventario de bodega | Unidades en bodega | Inventario de bodega | Inventario por SKU | Confirmado por Pash. Por confirmar que se pueda sumar por cápsula |
+| Inventario de bodega | Unidades en bodega | Inventario de bodega | Inventario por SKU | Confirmado |
 | Sell-through | Ventas de la ventana ÷ (ventas de la ventana + stock) | Evacuación % | Sell-through | Confirmado: es la misma fórmula |
 | Cobertura (días) | Stock ÷ (ventas de la ventana ÷ días de la ventana) | Cobertura (en meses) | Cobertura | Confirmado |
 | Margen % | (Precio − costo) ÷ precio | Margen | Beneficio bruto y margen | Por confirmar que llegue el costo por producto-color |
 | Ventas e-commerce | Unidades vendidas por la página | Venta página | Ventas por SKU | Confirmado por Pash. Por confirmar que se pueda sumar por cápsula |
 | Peso e-commerce | Ventas e-commerce ÷ ventas totales | No existe hoy | Calculado | Propuesta de Pash |
-| Ventas por clima | Participación de cada clima (frío, templado, cálido) | Bloque por clima | Atributo de clima | Por confirmar |
+| Ventas por clima | Participación de cada clima (frío, templado, cálido) | Bloque por clima | Atributo de clima por localización | Confirmado |
 
 ## 2.2 Producto-color (tarjeta y detalle)
 
@@ -53,10 +53,10 @@ Decisiones de Pash:
 
 | Campo | Cómo se calcula | Origen hoy | En Onebeat | Estado |
 |---|---|---|---|---|
-| Ventas por clima | Ventas del producto-color por clima | Bloque frío, templado, cálido | Atributo de clima | Por confirmar |
-| Ventas de la semana −1 y −2 | Ventas de las dos últimas semanas completas | Venta semana | Hay ventanas de 30, 60 y 90 días; no vi una semanal | Por confirmar la ventana semanal |
-| Ventas e-commerce de la ventana | Unidades por la página en la ventana elegida | Venta página | Ventas por SKU | Confirmado por Pash |
-| Inventario por ubicación | Tienda y bodega | Existencia e inventario de bodega | Inventario por SKU | Confirmado por Pash |
+| Ventas por clima | Ventas del producto-color por clima | Bloque frío, templado, cálido | Atributo de clima por localización | Confirmado |
+| Ventas de la semana −1 y −2 | Ventas de las dos últimas semanas completas | Venta semana | Ventas 30/60/90 d | Confirmado |
+| Ventas e-commerce de la ventana | Unidades por la página en la ventana elegida | Venta página | Ventas por SKU | Confirmado |
+| Inventario por ubicación | Tienda y bodega | Existencia e inventario de bodega | Inventario por SKU | Confirmado |
 
 ## 2.4 Filtros y vistas
 
@@ -74,7 +74,7 @@ Hoy el informe de los compradores y el tablero de ejemplo solo registraban 30 d�
 
 1. ¿La media del AG se puede calcular por cápsula, o solo por tienda?
 2. ¿Se pueden sumar por producto-color y por cápsula las ventas, el stock de tienda, la bodega y el e-commerce?
-3. ¿El clima, el costo y la venta de las semanas −1 y −2 existen por producto-color?
+3. ¿El costo existe por producto-color, para calcular el margen?
 4. ¿Cómo se exporta una ficha por cápsula?
 
 # 4. Anexo: estructura del informe actual
