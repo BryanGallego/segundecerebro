@@ -81,5 +81,3 @@ El informe actual es un PDF por cápsula, con corte a una fecha. Se arma a mano.
 
 - **Encabezado de cápsula:** días desde la entrada, ventas, compra, evacuación, evacuación ideal, inventario, cobertura y venta del mes, con el desglose por clima.
 - **Por producto-color:** entrada, venta total y del mes, % de venta, existencia, cobertura, precio, venta por día, evacuación ideal, venta e inventario de la página, cobertura de página, inventario de bodega, margen y ventas de las semanas −1 y −2, con el desglose por clima.
-
-Aquí solo va la estructura. El informe real trae precios, costos y márgenes de Pash y no se comparte.
