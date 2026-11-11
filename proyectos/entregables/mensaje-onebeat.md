@@ -1,24 +1,22 @@
 # Mensaje para Onebeat (borrador, para enviar tú)
 
-Cordial saludo, equipo de Onebeat.
+Hola, equipo de Onebeat. Un saludo y muchas gracias por el tiempo de la reunión de hoy.
 
-Agradezco el espacio de la reunión de hoy. Adjunto dos documentos con la solicitud de desarrollo del tablero **Comportamientos** en la plataforma:
+Quedamos muy motivados con lo que vimos y queremos proponerles algo: construir en la plataforma un tablero que llamamos **Comportamientos**, pensado a partir del tablero de Visual Merchandising que ya conocemos, pero que se pueda ver por cápsula y por marca, y no solo por tienda. Hoy nuestros compradores lo arman a mano, y creemos que Onebeat puede hacerlo mucho mejor.
 
-1. `mockup-comportamientos.html`: propuesta de cómo se vería, basada en Visual Merchandising pero por cápsula y por marca. Se abre con Chrome o Edge. Los datos son de ejemplo.
-2. `campos-comportamientos.docx`: los datos que requiere el tablero, cómo se calculan y qué falta por confirmar.
+Para que lo puedan revisar con calma, les comparto dos archivos:
 
-Solicitamos:
-- Clasificación de Onebeat (Lanzamiento, Más vendido, Belly, Baja rotación, Sin rotación), sin el semáforo del informe actual.
-- Evacuación ideal comparando la velocidad del producto-color con la media del AG.
-- Filtros como los de Onebeat y el interruptor Empresa | Tienda.
-- Ventana de ventas de 30, 60 y 90 días, como el selector que ya tienen.
-- Ventas del e-commerce y bodega por producto-color.
+- **El mockup** (`mockup-comportamientos.html`): una primera idea de cómo se vería. Se abre con Chrome o Edge y los datos son de ejemplo.
+- **El documento de campos** (`campos-comportamientos.docx`): los datos que necesitaría el tablero, cómo se calculan y qué falta por confirmar.
 
-Para avanzar, les agradezco confirmar:
-1. ¿La media del AG se puede calcular por cápsula o solo por tienda?
-2. ¿Cómo se exporta una ficha por cápsula?
+La idea es apoyarnos en lo que Onebeat ya calcula: la clasificación del producto (Lanzamiento, Más vendido, Belly, Baja rotación y Sin rotación), la comparación de cada producto-color con la media de su AG, la ventana de ventas de 30, 60 y 90 días, y el inventario de tienda, la bodega y el e-commerce.
 
-Quedo atento para coordinar una revisión conjunta y conocer el tiempo estimado para una primera versión.
+Nos quedan dos dudas en las que su ayuda nos sirve mucho:
 
-Cordialmente,
+1. ¿La media del AG se puede calcular por cápsula, o solo por tienda?
+2. ¿Cómo se exportaría una ficha por cápsula?
+
+Con gusto coordinamos una sesión para revisarlo juntos. Y si nos pueden contar qué tiempo estiman para una primera versión, nos ayudaría a planear por nuestro lado.
+
+Un abrazo y gracias de nuevo,
 Brayan Gallego
