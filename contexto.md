@@ -72,3 +72,9 @@ Fuente: [[Brayan Gallego]], 2026-09-28.
 - Tania Liberman: de Onebeat; pregunta por el pago de facturas (correo del 2026-11-04)
 - Magali Garzón ← «Ingry Magali Garzon Lopez», igarzon@pash.com.co: Analista de Negocios de Patprimo; envía los informes «Comportamientos» a Sophie y Pepe Douer (correo del 2026-11-03)
 - María Luisa Ochoa ← «Maria Luisa Ochoa Guevara», «Maria Luisa», mochoa@pash.com.co: Directora de Negocios de Patprimo; pidió la lista de deseos de informes de Onebeat (correo del 2026-10-05)
+
+### Coordinados tela + rib (agregado 2026-11-11)
+- Juan José Vinasco ← «Juan Jose Vinasco Bueno», jvinasco@tekstelas.com: organizó la reunión «logistica ribs coordinados» del 2026-11-10
+- Alain Douer ← «Alain Salomon Douer Kassin», alaindouer@patprimo.com.co: invitado a esa reunión; la gerencia a la que se presenta la propuesta de coordinados (hilo «Ribs Coordinados», 2026-11-04)
+- Héctor Bermúdez ← «Hector Hernan Bermudez Salazar», hhbermudez@tekstelas.com: logística; respondió el 2026-11-05 que la propuesta es viable en el WMS del buffer
+- Horus Alvarado ← «Horus Anael Alvarado Romero», hoalvarado@tekstelas.com: tintorería; define las excepciones y los baños grupal e individual
