@@ -15,9 +15,9 @@ Flujo en borrador: `proyectos/entregables/flujo-coordinados-buffer.html`. Lo pid
 - Telas seleccionadas que comparten rib: Jeffreys, Castela, Rosley Percha, Brunella, Santoro Percha, Ferreira, Ferreira Percha, Bosforo y Brazilia. Las seleccionaron [[Juan José Vinasco]] y [[Alain Douer]] con un análisis riguroso (Brayan, 2026-11-11).
 - La trazabilidad en el CEDI no está clara: se decide en la reunión «Proceso Buffer Coordinados E2E» de las 10:30 del 2026-11-11.
 
-## Contradicción por resolver
+## Cómo se gestiona el buffer
 
-La propuesta de Luis Silva dice que base tela y rib se almacenan en la misma ubicación. La de Héctor Bermúdez pone los ribs en ubicaciones exclusivas, separadas. El flujo muestra hoy la de Héctor, marcada como propuesta. Falta que se confirme.
+Brayan indicó el 2026-11-11 que la propuesta de [[Héctor Bermúdez]] (ubicaciones exclusivas para los ribs, sin mezcla de referencias en el WMS y con control físico del líder de turno) es la forma en que se gestionará el buffer. La propuesta de Luis Silva decía que base tela y rib se almacenaran en la misma ubicación; el flujo muestra la de Héctor.
 
 ## Pendientes abiertos
 
