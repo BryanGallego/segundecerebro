@@ -12,7 +12,7 @@ Flujo en borrador: `proyectos/entregables/flujo-coordinados-buffer.html`. Lo pid
 
 - El ERP no permite lanzar OT agrupada: tela y rib llevan OT distintas, se lanzan, se grapan y viajan juntas.
 - En tintorería habrá baño grupal (se evalúa el tono en conjunto) y baño individual (se garantiza el matizado). Lo definió [[Horus Alvarado]].
-- Telas seleccionadas que comparten rib: Jeffreys, Castela, Rosley Percha, Brunella, Santoro Percha, Ferreira, Ferreira Percha, Bosforo y Brazilia.
+- Telas seleccionadas que comparten rib: Jeffreys, Castela, Rosley Percha, Brunella, Santoro Percha, Ferreira, Ferreira Percha, Bosforo y Brazilia. Las seleccionaron [[Juan José Vinasco]] y [[Alain Douer]] con un análisis riguroso (Brayan, 2026-11-11).
 - La trazabilidad en el CEDI no está clara: se decide en la reunión «Proceso Buffer Coordinados E2E» de las 10:30 del 2026-11-11.
 
 ## Contradicción por resolver
