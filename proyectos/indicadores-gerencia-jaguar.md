@@ -4,7 +4,7 @@ Estado: borrador de diseño, 2026-11-18. Responsable: [[Brayan Gallego]]. Contra
 
 ## Fuentes
 - Correo de Brayan Gallego, 2026-11-11 15:36, «RE: Propuesta Indicadores para el Grupo Pash desde Jaguar+», con el Excel «Matriz de Indicadores Grupo Pash.xlsx» (columnas: WorkFlow | Área | Tipo | Tablero | Propósito | Cómo Leerlo | Métricas | Alcance).
-- PDF «KPIs_Onebeat_Grupo_Pash.pdf» (Andrés Alfonso, 2026-10-09; reenviado por Hugo Carvalho el 2026-11-13 13:28). **Supuesto:** es el PDF que Brayan llama «su propuesta»; no encontré en el buzón una respuesta posterior al correo del 2026-11-11 con otro PDF. Por confirmar.
+- PDF «KPIs_Onebeat_Grupo_Pash.pdf» (Andrés Alfonso, 2026-10-09; reenviado por Hugo Carvalho el 2026-11-13 13:28). **Confirmado por Brayan (2026-11-18, chat):** es el PDF que envió [[Hugo Carvalho]]. En el buzón es el único correo de Hugo con el PDF adjunto (2026-11-13 13:28; el original es del 2026-10-09).
 - Casos de trabajo ya hechos con Onebeat: «Comportamientos» (`proyectos/comportamientos-compradores-onebeat.md`). Por confirmar si «los casos» son estos u otros.
 
 ## Qué trae el PDF de Onebeat
@@ -47,7 +47,7 @@ Conservar las columnas de Brayan y añadir: **Pregunta de gerencia** | **Fórmul
 - Cada workflow con un dueño nombrado y una frecuencia.
 
 ## Pendiente por decidir con Brayan
-1. Confirmar cuál es el PDF y cuáles son «los casos».
+1. Confirmar cuáles son «los casos» (el PDF ya está confirmado).
 2. ¿Los 5 nuevos workflows (9–13) van en esta versión o en una tercera?
 3. ¿La gerencia ve solo estratégicos, o también tácticos?
 4. Dueños por workflow (¿quién de Pash?).
